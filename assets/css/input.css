@@ -1,0 +1,68 @@
+/* input.css */
+
+/* Styling untuk container form */
+.container-fluid {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Styling untuk label */
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+  }
+  
+  /* Styling untuk input */
+  .form-group input, .form-group select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #cf0844;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    background-color: #fc0362;
+    color: #fff;
+  }
+
+  .form-group select:focus {
+    background-color: #fc0362;
+    color: #fff;
+  }
+  
+  /* Styling untuk placeholder */
+  .form-group input::placeholder {
+    color: #aaa;
+    text-align: center;
+  }
+  
+  /* Styling untuk label saat input diisi atau dalam fokus */
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label {
+    top: -15px;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  /* Styling untuk tombol */
+  input[type="submit"] {
+    background-color: #fc0362;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  
